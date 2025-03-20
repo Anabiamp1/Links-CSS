@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+     a:visited {
+         color: rgb(228, 28, 185);
+        }
+        a:hover {
+        color: rgb(11, 210, 48);
+        text-decoration: underline;
+        }
+        a:active{
+        color: coral;
+        }
+        .especial {
+            background-color: aquamarine;
+            color: blue;
+        }
+        .especial::after {
+            content: '[Link]';
+                      color: rgb(58, 37, 10);
+                      text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <a href="https://www.youtube.com/@canalcozybe"target="_blank">
+            <li  class="especial">Canal do Youtube</li>
+        </a>
+        <a href="https://github.com/Anabiamp1"target="_blank">
+            <li>Repositório do Github</li>
+        </a>
+        <a href=""target="_blank">
+            <li>Site de Cursos</li>
+        </a>
+    </ul>
+</body>
+</html>
